@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres
+    restart: always
+    environment:
+      - POSTGRES_DB=guitrainer
+      - POSTGRES_PASSWORD=somepassword
+    ports:
+      - "5432:5432"
